@@ -20,5 +20,10 @@
   "browserslist": [
     "defaults"
   ],
-  "packageManager": "yarn@1.22.19"
+  "packageManager": "yarn@1.22.19",
+  "devDependencies": {
+    "@prettier/plugin-ruby": "^1.6.1",
+    "prettier": "^2.2.1",
+    "prettier-plugin-erb": "^0.4.0"
+  }
 }
