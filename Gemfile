@@ -74,6 +74,6 @@ gem 'dockerfile-rails', '>= 1.6', group: :development
 
 gem 'devise', '~> 4.9'
 
-gem 'sass-rails', '~> 6.0'
+# gem 'sass-rails', '~> 6.0'
 
 gem 'devise-bootstrap-views', '~> 1.0'
