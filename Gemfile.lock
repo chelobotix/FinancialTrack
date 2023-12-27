@@ -99,6 +99,7 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    devise-bootstrap-views (1.1.0)
     dockerfile-rails (1.6.1)
       rails (>= 3.0.0)
     drb (2.2.0)
@@ -284,6 +285,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   devise (~> 4.9)
+  devise-bootstrap-views (~> 1.0)
   dockerfile-rails (>= 1.6)
   importmap-rails
   jbuilder
