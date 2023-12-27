@@ -12,8 +12,11 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-    <%= yield %>
+    <div class="container py-3">
+      <%= render 'shared/messages' %>
+    </div>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
