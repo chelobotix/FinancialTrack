@@ -10,7 +10,8 @@
                          params[:crypto_name],
                          placeholder: 'Crypto name',
                          autofocus: true,
-                         class: 'form-control form-control-large '
+                         class: 'form-control form-control-large ',
+                         required: true
         %>
       </div>
       <div class="col-sm-3 no-left-padding">
@@ -24,14 +25,9 @@
 
 <% if @crypto %>
   <% if @crypto == "coin not found" %>
-    <p>Coin not found</p>
+    <div class="alert alert-danger col-sm-9 mt-3" role="alert">Sorry, coin not found</div>
   <% else %>
-    <div class="card card-header col-sm-9 mt-3">
-      <img src="<%= @crypto.image %>" alt="crypto-logo" class="crypto-logo" />
-      <strong>Symbol: </strong>
-      <%= @crypto.symbol %>
-    </div>
-    <div class="card  col-sm-9 mt-3">
+    <div class="card col-sm-9 mt-3">
       <div class="card-header">
         <img src="<%= @crypto.image %>" alt="crypto-logo" class="crypto-logo" />
       </div>
