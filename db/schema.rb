@@ -15,9 +15,11 @@ ActiveRecord::Schema[7.1].define(version: 2023_12_27_172453) do
   enable_extension "plpgsql"
 
   create_table "cryptos", force: :cascade do |t|
-    t.string "ticker"
+    t.string "symbol"
     t.string "name"
+    t.text "description"
     t.decimal "last_price"
+    t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
