@@ -2,7 +2,7 @@
 
 <div class="search-area">
   <h3>Search Cryptos</h3>
-  <%= form_with url:search_crypto_path, method: "get", local: true, data: {turbo: false} do %>
+  <%= form_tag search_crypto_path, method: :get do %>
     <div class="form-group row">
       <div class="col-sm-9 no-right-padding">
         <%=
@@ -22,36 +22,4 @@
     </div>
   <% end %>
 </div>
-
-<% if @crypto %>
-  <% if @crypto == "coin not found" %>
-    <div class="alert alert-danger col-sm-9 mt-3" role="alert">Sorry, coin not found</div>
-  <% else %>
-    <div class="card col-sm-9 mt-3">
-      <div class="card-header">
-        <img src="<%= @crypto.image %>" alt="crypto-logo" class="crypto-logo" />
-      </div>
-      <div class="card-body">
-        <h5 class="card-title"><%= @crypto.name %> (<%= @crypto.symbol.upcase %>)</h5>
-        <p class="card-text">Current Price: <%= pluralize(@crypto.last_price, 'USD') %></p>
-        <p class="d-inline-flex gap-1">
-          <button
-            class="btn btn-primary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#collapseExample"
-            aria-expanded="false"
-            aria-controls="collapseExample"
-          >
-            More information...
-          </button>
-        </p>
-        <div class="collapse" id="collapseExample">
-          <div class="card card-body">
-            <%= @crypto.description.html_safe %>
-          </div>
-        </div>
-      </div>
-    </div>
-  <% end %>
-<% end %>
+<%= render 'users/crypto', crypto: @crypto %>

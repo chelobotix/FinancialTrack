@@ -1,11 +1,22 @@
+require 'httparty'
+
 class CryptosController < ApplicationController
   # Search
   def search
     if params[:crypto_name].present?
       @crypto = Crypto.new_search(params[:crypto_name].strip)
+
+      render(
+        turbo_stream: turbo_stream.replace(
+          'response',
+          partial: 'users/crypto',
+          locals: { crypto: @crypto, datos: 'secau' }
+        )
+      )
+
     else
-      flash.now[:alert] = "The search can't be empty"
+      flash[:alert] = "The search can't be empty"
+      redirect_to(my_portfolio_path)
     end
-    render('users/my_portfolio')
   end
 end
