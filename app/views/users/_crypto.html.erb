@@ -1,34 +1,24 @@
-<%= turbo_frame_tag 'response' do %>
-  <% if @crypto %>
-    <% if @crypto == "coin not found" %>
-      <div class="alert alert-danger col-sm-9 mt-3" role="alert">Sorry, coin not found</div>
-    <% else %>
-      <div class="card col-sm-9 mt-3">
-        <div class="card-header">
-          <img src="<%= @crypto.image %>" alt="crypto-logo" class="crypto-logo" />
-        </div>
-        <div class="card-body">
-          <h5 class="card-title"><%= @crypto.name %> (<%= @crypto.symbol.upcase %>)</h5>
-          <p class="card-text">Current Price: <%= pluralize(@crypto.last_price, 'USD') %></p>
-          <p class="d-inline-flex gap-1">
-            <button
-              class="btn btn-primary"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              More information...
-            </button>
-          </p>
-          <div class="collapse collapse-div" id="collapseExample">
-            <div class="card card-body">
-              <%= @crypto.description.html_safe %>
-            </div>
-          </div>
-        </div>
+<div class="card col-sm-9 mt-3">
+  <div class="card-header"><img src="<%= @crypto.image %>" alt=@crypto-logo" class=@crypto-logo" /></div>
+  <div class="card-body">
+    <h5 class="card-title"><%= @crypto.name %> (<%= @crypto.symbol.upcase %>)</h5>
+    <p class="card-text">Current Price: <%= pluralize(@crypto.last_price, 'USD') %></p>
+    <p class="d-inline-flex gap-1">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapseExample"
+        aria-expanded="false"
+        aria-controls="collapseExample"
+      >
+        More information...
+      </button>
+    </p>
+    <div class="collapse collapse-div" id="collapseExample">
+      <div class="card card-body">
+        <%= @crypto.description.html_safe %>
       </div>
-    <% end %>
-  <% end %>
-<% end %>
+    </div>
+  </div>
+</div>

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "my_portfolio", to: "users#my_portfolio"
 
   # Cryptos
-  get "search_crypto", to: "cryptos#search"
+  get "search", to: "cryptos#search"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

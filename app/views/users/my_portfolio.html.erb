@@ -2,7 +2,7 @@
 
 <div class="search-area">
   <h3>Search Cryptos</h3>
-  <%= form_tag search_crypto_path, method: :get do %>
+  <%= form_tag search_path, remote: true, data: {turbo: false}, method: :get do %>
     <div class="form-group row">
       <div class="col-sm-9 no-right-padding">
         <%=
@@ -10,16 +10,20 @@
                          params[:crypto_name],
                          placeholder: 'Crypto name',
                          autofocus: true,
-                         class: 'form-control form-control-large ',
-                         required: true
+                         class: 'form-control form-control-lg'
         %>
       </div>
       <div class="col-sm-3 no-left-padding">
-        <%= button_tag type: :submit, class: 'btn btn-success' do %>
-          <i class="bi bi-search" style="font-size: 1rem; color: #fffff;"></i>
+        <%= button_tag type: :submit, class: "btn btn-success" do %>
+          <i class="bi bi-search"></i>
         <% end %>
       </div>
     </div>
   <% end %>
 </div>
-<%= render 'users/crypto', crypto: @crypto %>
+
+<div id="result"></div>
+
+<% if @crypto %>
+  <%= render 'users/crypto' %>
+<% end %>
