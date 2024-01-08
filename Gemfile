@@ -79,3 +79,5 @@ gem 'devise', '~> 4.9'
 gem 'devise-bootstrap-views', '~> 1.0'
 
 gem 'httparty', '~> 0.21.0'
+
+gem 'faker'

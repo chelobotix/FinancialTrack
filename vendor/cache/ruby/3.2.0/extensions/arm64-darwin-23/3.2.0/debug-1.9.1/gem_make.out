@@ -1,0 +1,20 @@
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+/Users/marceloalarcon/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-jw5ooe sitelibdir\=./.gem.20240108-53448-jw5ooe clean
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-jw5ooe sitelibdir\=./.gem.20240108-53448-jw5ooe
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-jw5ooe sitelibdir\=./.gem.20240108-53448-jw5ooe install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 debug.bundle ./.gem.20240108-53448-jw5ooe/debug
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/debug-1.9.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-jw5ooe sitelibdir\=./.gem.20240108-53448-jw5ooe clean

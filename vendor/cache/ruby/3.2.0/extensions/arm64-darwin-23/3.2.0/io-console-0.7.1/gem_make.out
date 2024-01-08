@@ -1,0 +1,28 @@
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/io-console-0.7.1/ext/io/console
+/Users/marceloalarcon/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+checking for rb_io_path()... no
+checking for rb_io_descriptor()... yes
+checking for rb_io_get_write_io()... yes
+checking for rb_io_closed_p()... no
+checking for rb_io_open_descriptor()... no
+checking for termios.h... yes
+checking for cfmakeraw() in termios.h... yes
+checking for sys/ioctl.h... yes
+checking for HAVE_RUBY_FIBER_SCHEDULER_H... yes
+creating Makefile
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-pvntis sitelibdir\=./.gem.20240108-53448-pvntis clean
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-pvntis sitelibdir\=./.gem.20240108-53448-pvntis
+compiling console.c
+linking shared-object io/console.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-pvntis sitelibdir\=./.gem.20240108-53448-pvntis install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 console.bundle ./.gem.20240108-53448-pvntis/io
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/io-console-0.7.1/ext/io/console
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-pvntis sitelibdir\=./.gem.20240108-53448-pvntis clean

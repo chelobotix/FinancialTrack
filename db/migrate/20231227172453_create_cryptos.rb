@@ -4,7 +4,7 @@ class CreateCryptos < ActiveRecord::Migration[7.1]
       t.string :symbol
       t.string :name
       t.text :description
-      t.decimal :last_price
+      t.decimal :last_price, default: 0.0
       t.string :image
 
       t.timestamps

@@ -1,0 +1,19 @@
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+/Users/marceloalarcon/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-5vkjiw sitelibdir\=./.gem.20240108-53448-5vkjiw clean
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-5vkjiw sitelibdir\=./.gem.20240108-53448-5vkjiw
+compiling cruby.c
+linking shared-object skiptrace/internal/cruby.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-5vkjiw sitelibdir\=./.gem.20240108-53448-5vkjiw install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20240108-53448-5vkjiw/skiptrace/internal
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/bindex-0.8.1/ext/skiptrace
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-5vkjiw sitelibdir\=./.gem.20240108-53448-5vkjiw clean

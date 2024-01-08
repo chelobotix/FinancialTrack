@@ -105,6 +105,8 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faker (3.2.2)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     httparty (0.21.0)
@@ -279,6 +281,7 @@ DEPENDENCIES
   devise (~> 4.9)
   devise-bootstrap-views (~> 1.0)
   dockerfile-rails (>= 1.6)
+  faker
   httparty (~> 0.21.0)
   importmap-rails
   jbuilder

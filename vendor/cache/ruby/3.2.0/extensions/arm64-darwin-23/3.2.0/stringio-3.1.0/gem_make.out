@@ -1,0 +1,19 @@
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+/Users/marceloalarcon/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-qttv3l sitelibdir\=./.gem.20240108-53448-qttv3l clean
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-qttv3l sitelibdir\=./.gem.20240108-53448-qttv3l
+compiling stringio.c
+linking shared-object stringio.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-qttv3l sitelibdir\=./.gem.20240108-53448-qttv3l install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 stringio.bundle ./.gem.20240108-53448-qttv3l
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/stringio-3.1.0/ext/stringio
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-qttv3l sitelibdir\=./.gem.20240108-53448-qttv3l clean

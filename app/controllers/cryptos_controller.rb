@@ -12,13 +12,14 @@ class CryptosController < ApplicationController
       else
         @crypto = nil
         respond_to do |format|
-          flash[:alert] = 'Coin not found'
+          flash.now[:alert] = 'Coin not found'
           format.js { render(partial: 'users/crypto_js') }
         end
       end
     else
+
       respond_to do |format|
-        flash[:alert] = 'Please, enter a crypto to search'
+        flash.now[:alert] = 'Please, enter a crypto to search'
         format.js { render(partial: 'users/crypto_js') }
       end
     end

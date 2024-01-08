@@ -1,6 +1,10 @@
 require 'httparty'
 
 class Crypto < ApplicationRecord
+  has_many :user_cryptos, dependent: :destroy
+  has_many :users, through: :user_cryptos
+
+  validates :name, :symbol, presence: true, uniqueness: true
   # New Search
   def self.new_search(crypto_name)
     api_key = Rails.application.credentials.coingecko[:api_key]

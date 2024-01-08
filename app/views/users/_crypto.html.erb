@@ -1,7 +1,8 @@
-<%= render 'shared/messages' %>
+<div class="col-sm-9 mt-3"><%= render 'shared/messages' %></div>
+
 <% if @crypto %>
   <div class="card col-sm-9 mt-3">
-    <div class="card-header"><img src="<%= @crypto.image %>" alt=@crypto-logo" class=@crypto-logo" /></div>
+    <div class="card-header"><img src="<%= @crypto.image %>" alt="crypto-logo" class="crypto-logo" /></div>
     <div class="card-body">
       <h5 class="card-title"><%= @crypto.name %> (<%= @crypto.symbol.upcase %>)</h5>
       <p class="card-text">Current Price: <%= pluralize(@crypto.last_price, 'USD') %></p>
