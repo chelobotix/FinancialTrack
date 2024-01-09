@@ -1,0 +1,19 @@
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+/Users/marceloalarcon/.rvm/rubies/ruby-3.2.2/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-6txkfh sitelibdir\=./.gem.20240108-53448-6txkfh clean
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-6txkfh sitelibdir\=./.gem.20240108-53448-6txkfh
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+ld: warning: ignoring duplicate libraries: '-lruby.3.2'
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-6txkfh sitelibdir\=./.gem.20240108-53448-6txkfh install
+/opt/homebrew/opt/coreutils/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20240108-53448-6txkfh/racc
+
+current directory: /Users/marceloalarcon/Documents/Programming/The-Complete-Ruby-on-Rails-Developer-Course/FinanceTracker/vendor/cache/ruby/3.2.0/gems/racc-1.7.3/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20240108-53448-6txkfh sitelibdir\=./.gem.20240108-53448-6txkfh clean

@@ -1,24 +1,43 @@
-<div class="card col-sm-9 mt-3">
-  <div class="card-header"><img src="<%= @crypto.image %>" alt=@crypto-logo" class=@crypto-logo" /></div>
-  <div class="card-body">
-    <h5 class="card-title"><%= @crypto.name %> (<%= @crypto.symbol.upcase %>)</h5>
-    <p class="card-text">Current Price: <%= pluralize(@crypto.last_price, 'USD') %></p>
-    <p class="d-inline-flex gap-1">
-      <button
-        class="btn btn-primary"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseExample"
-        aria-expanded="false"
-        aria-controls="collapseExample"
-      >
-        More information...
-      </button>
-    </p>
-    <div class="collapse collapse-div" id="collapseExample">
-      <div class="card card-body">
-        <%= @crypto.description.html_safe %>
+<div class="col-sm-9 mt-3"><%= render 'shared/messages' %></div>
+
+<% if @crypto %>
+  <div class="card col-sm-9 mt-3">
+    <div class="card-header"><img src="<%= @crypto.image %>" alt="crypto-logo" class="crypto-logo" /></div>
+    <div class="card-body">
+      <h5 class="card-title"><%= @crypto.name %> (<%= @crypto.symbol.upcase %>)</h5>
+      <p class="card-text">Current Price: <%= pluralize(@crypto.last_price, 'USD') %></p>
+      <div class="d-flex justify-content-between align-items-center gap-1">
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          More information...
+        </button>
+
+        <% if current_user.can_track_crypto?(@crypto.name) %>
+          <%=
+            link_to 'Add to Portfolio',
+                    user_cryptos_path(crypto_name: @crypto.name),
+                    method: :post,
+                    class: 'btn btn-success'
+          %>
+        <% else %>
+          <% if !current_user.under_stock_limit? %>
+            <span class="badge text-bg-danger">You can't save more cryptos (limit: 10)</span>
+          <% else %>
+            <span class="badge text-bg-danger">This crypto is already in your tracking list</span>
+          <% end %>
+        <% end %>
+      </div>
+      <div class="collapse collapse-div" id="collapseExample">
+        <div class="card card-body">
+          <%= @crypto.description.html_safe %>
+        </div>
       </div>
     </div>
   </div>
-</div>
+<% end %>

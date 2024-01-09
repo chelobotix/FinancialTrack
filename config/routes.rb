@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root 'pages#index'
 
   # Pages
@@ -12,6 +13,9 @@ Rails.application.routes.draw do
 
   # Cryptos
   get "search", to: "cryptos#search"
+
+  # User_cryptos
+  resources :user_cryptos, only: [:create, :destroy]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

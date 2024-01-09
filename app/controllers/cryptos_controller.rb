@@ -11,12 +11,17 @@ class CryptosController < ApplicationController
         end
       else
         @crypto = nil
-        flash[:alert] = 'Coin not found'
-        redirect_to(my_portfolio_path)
+        respond_to do |format|
+          flash.now[:alert] = 'Coin not found'
+          format.js { render(partial: 'users/crypto_js') }
+        end
       end
     else
-      flash[:alert] = 'Please, enter a crypto to search'
-      redirect_to(my_portfolio_path)
+
+      respond_to do |format|
+        flash.now[:alert] = 'Please, enter a crypto to search'
+        format.js { render(partial: 'users/crypto_js') }
+      end
     end
   end
 end

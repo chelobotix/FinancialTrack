@@ -1,0 +1,37 @@
+<h3>Tracked Cryptos</h3>
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th class="text-center" scope="col">#</th>
+      <th class="text-center" scope="col">Logo</th>
+      <th class="text-center" scope="col">Name</th>
+      <th class="text-center" scope="col">Symbol</th>
+      <th class="text-center" scope="col">Price</th>
+      <th class="text-center" scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @tracked_cryptos.each_with_index do |crypto, index| %>
+      <tr>
+        <td class="align-middle text-center" scope="col"><%= index + 1 %></td>
+        <td class="align-middle text-center" scope="col">
+          <img src="<%= crypto.image %>" alt="" class="crypto-logo" />
+        </td>
+        <td class="align-middle text-center" scope="col"><%= crypto.name %></td>
+        <td class="align-middle text-center" scope="col"><%= crypto.symbol %></td>
+        <td class="align-middle text-center" scope="col"><%= crypto.last_price %></td>
+        <td class="align-middle text-center" scope="col">
+          <%=
+            link_to 'Delete',
+                    user_crypto_path(crypto),
+                    data: {
+                      turbo_method: :delete,
+                      turbo_confirm: "Are you sure to remove #{crypto.name} from your tracking list?",
+                    },
+                    class: 'btn btn-sm btn-warning'
+          %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

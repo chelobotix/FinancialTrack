@@ -84,6 +84,7 @@ GEM
       msgpack (~> 1.2)
     builder (3.2.4)
     byebug (11.1.3)
+    coderay (1.1.3)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
     crass (1.0.6)
@@ -105,6 +106,8 @@ GEM
     drb (2.2.0)
       ruby2_keywords
     erubi (1.12.0)
+    faker (3.2.2)
+      i18n (>= 1.8.11, < 2)
     globalid (1.2.1)
       activesupport (>= 6.1)
     httparty (0.21.0)
@@ -134,6 +137,7 @@ GEM
       net-pop
       net-smtp
     marcel (1.0.2)
+    method_source (1.0.0)
     mini_mime (1.1.5)
     minitest (5.20.0)
     msgpack (1.7.2)
@@ -161,6 +165,14 @@ GEM
       ast (~> 2.4.1)
       racc
     pg (1.5.4)
+    pry (0.14.2)
+      coderay (~> 1.1)
+      method_source (~> 1.0)
+    pry-nav (1.0.0)
+      pry (>= 0.9.10, < 0.15)
+    pry-remote (0.1.8)
+      pry (~> 0.9)
+      slop (~> 3.0)
     psych (5.1.2)
       stringio
     puma (6.4.0)
@@ -233,6 +245,7 @@ GEM
       rubocop (>= 1.33.0, < 2.0)
     ruby-progressbar (1.13.0)
     ruby2_keywords (0.0.5)
+    slop (3.6.0)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -279,10 +292,14 @@ DEPENDENCIES
   devise (~> 4.9)
   devise-bootstrap-views (~> 1.0)
   dockerfile-rails (>= 1.6)
+  faker
   httparty (~> 0.21.0)
   importmap-rails
   jbuilder
   pg (~> 1.1)
+  pry (~> 0.14.2)
+  pry-nav
+  pry-remote
   puma (>= 5.0)
   rails (~> 7.1.2)
   rubocop (~> 1.57, >= 1.57.2)
