@@ -14,7 +14,7 @@
     <% @tracked_cryptos.each_with_index do |crypto, index| %>
       <tr>
         <td scope="col"><%= index + 1 %></td>
-        <td scope="col"><img src="<%= crypto.image %>" alt="" /></td>
+        <td scope="col"><img src="<%= crypto.image %>" alt="" class="crypto-logo" /></td>
         <td scope="col"><%= crypto.name %></td>
         <td scope="col"><%= crypto.symbol %></td>
         <td scope="col"><%= crypto.last_price %></td>
