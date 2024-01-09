@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   get "search", to: "cryptos#search"
 
   # User_cryptos
-  resources :user_cryptos, only: [:create]
+  resources :user_cryptos, only: [:create, :destroy]
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

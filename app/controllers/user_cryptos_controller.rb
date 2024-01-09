@@ -13,6 +13,14 @@ class UserCryptosController < ApplicationController
     redirect_to(my_portfolio_path)
   end
 
+  # destroy
+  def destroy
+    target = UserCrypto.where(user_id: current_user.id, crypto_id: params[:id])
+    target.first.destroy!
+    flash[:notice] = 'Crypto has been removed!'
+    redirect_to(my_portfolio_path)
+  end
+
   private
 
   def user_cryptos_params
